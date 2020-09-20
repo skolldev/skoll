@@ -1,18 +1,14 @@
 import Head from "next/head";
-import { ReactQueryDevtools } from "react-query-devtools";
-import { Layout } from "../components/layout";
+import { InnerLayout } from "../components/InnerLayout";
 
 export const Home = (): JSX.Element => {
   return (
-    <div>
+    <InnerLayout pageTitle="Dashboard">
       <Head>
-        <title>Skoll</title>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        <title>SkollCoaching - Dashboard</title>
       </Head>
-      <Layout />
-      <ReactQueryDevtools />
-    </div>
+      Im the dashboard
+    </InnerLayout>
   );
 };
 
